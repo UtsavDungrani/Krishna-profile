@@ -86,7 +86,7 @@ export default function Home() {
             {/* Right: Content */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-                Premium Transmission lines & Fabrication
+                Premium Transmission lines Hardware & Fabrication
               </h1>
               <p className="text-gray-300 text-lg mb-6">
                 Industry-leading manufacturer of electrical poles, hardware, and fabrication materials. 

@@ -61,11 +61,11 @@ export default function Contact() {
       }
 
       const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
+        name: formData.name,
+        email: formData.email,
         phone: formData.phone,
         message: formData.message,
-        reply_to: formData.email,
+        title: `New Contact Form Submission from ${formData.name}`,
       }
 
       await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY)
@@ -76,9 +76,9 @@ export default function Contact() {
           EMAILJS_SERVICE_ID,
           EMAILJS_AUTOREPLY_TEMPLATE_ID,
           {
-            to_name: formData.name,
-            to_email: formData.email,
-            message: formData.message,
+            name: formData.name,
+            email: formData.email,
+            title: `New Contact Form Submission from ${formData.name}`,
           },
           EMAILJS_PUBLIC_KEY,
         )
