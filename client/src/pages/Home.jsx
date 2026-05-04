@@ -23,18 +23,18 @@ export default function Home() {
         description: 'Durable V-cross arm set designed for secure electrical line mounting.',
       },
       {
-        title: 'S.S SET',
-        description: 'High-quality S.S set built for corrosion resistance and dependable performance.',
+        title: 'GUY SET',
+        description: 'High-quality GUY SET built for corrosion resistance and dependable performance.',
       },
       {
-        title: 'TEPPING ANGLE',
+        title: 'V-CROSS ARM SET',
         description: 'Precision tepping angle for fabrication and structural support applications.',
       },
     ]
 
     // Load hero images (products 1-4)
     const heroImgs = []
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 4; i >= 1; i--) {
       heroImgs.push({
         src: `/assets/product-${i}.jpeg`,
         alt: `Product ${i}`
@@ -86,7 +86,7 @@ export default function Home() {
             {/* Right: Content */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-                Premium Electrical Poles & Fabrication
+                Premium Transmission lines & Fabrication
               </h1>
               <p className="text-gray-300 text-lg mb-6">
                 Industry-leading manufacturer of electrical poles, hardware, and fabrication materials. 
@@ -247,7 +247,7 @@ export default function Home() {
             <Link to="/contact" className="btn-outline-light">
               Get in Touch
             </Link>
-            <a href="tel:+919876543210" className="btn-secondary bg-white text-primary hover:bg-blue-50">
+            <a href="tel:+919879917998" className="btn-secondary bg-white text-primary hover:bg-blue-50">
               Call Now
             </a>
           </div>

@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <FiPhone size={18} className="mt-0.5 text-primary flex-shrink-0" />
-                <span className="text-gray-400 text-sm">+91-9876543210</span>
+                <span className="text-gray-400 text-sm">+91-9879917998</span>
               </li>
               <li className="flex items-start gap-3">
                 <FiMail size={18} className="mt-0.5 text-primary flex-shrink-0" />
@@ -65,7 +65,7 @@ export default function Footer() {
                 <span className="text-gray-400 text-sm">
                   Survey no 246/1, Plot no 8<br />
                   Bhavnagar Rajkot road, Opp. GIDC-1<br />
-                  Shihor, Bhavnagar, Gujarat - 364240
+                  Sihor, Bhavnagar, Gujarat - 364240
                 </span>
               </li>
             </ul>

@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import { FiPhone, FiMail, FiMapPin, FiCheck, FiAlertCircle } from 'react-icons/fi'
-import axios from 'axios'
+import emailjs from '@emailjs/browser'
+
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const EMAILJS_AUTOREPLY_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_AUTOREPLY_TEMPLATE_ID
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -51,19 +56,43 @@ export default function Contact() {
     }
 
     try {
-      const response = await axios.post('/api/contact', formData)
-
-      if (response.status === 200) {
-        setStatus('success')
-        setFormData({ name: '', email: '', phone: '', message: '' })
-        // Clear success message after 5 seconds
-        setTimeout(() => setStatus(null), 5000)
+      if (!EMAILJS_PUBLIC_KEY || !EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID) {
+        throw new Error('Email service is not configured. Add EmailJS environment variables and rebuild the app.')
       }
+
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+        reply_to: formData.email,
+      }
+
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY)
+
+      // Optional customer auto-reply. Set VITE_EMAILJS_AUTOREPLY_TEMPLATE_ID to enable.
+      if (EMAILJS_AUTOREPLY_TEMPLATE_ID) {
+        await emailjs.send(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_AUTOREPLY_TEMPLATE_ID,
+          {
+            to_name: formData.name,
+            to_email: formData.email,
+            message: formData.message,
+          },
+          EMAILJS_PUBLIC_KEY,
+        )
+      }
+
+      setStatus('success')
+      setFormData({ name: '', email: '', phone: '', message: '' })
+      // Clear success message after 5 seconds
+      setTimeout(() => setStatus(null), 5000)
     } catch (error) {
       console.error('Error submitting form:', error)
       setStatus('error')
       setErrorMessage(
-        error.response?.data?.message ||
+        error?.message ||
         'Failed to send message. Please try again later.'
       )
     } finally {
@@ -96,8 +125,8 @@ export default function Contact() {
                 <FiPhone className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-semibold text-lg text-gray-900 mb-2">Phone</h3>
-              <p className="text-gray-600 mb-3">+91-9876543210</p>
-              <a href="tel:+919876543210" className="text-primary font-medium text-sm hover:underline">
+              <p className="text-gray-600 mb-3">+91-9879917998</p>
+              <a href="tel:+919879917998" className="text-primary font-medium text-sm hover:underline">
                 Call Now
               </a>
             </div>
@@ -126,7 +155,7 @@ export default function Contact() {
               <p className="text-gray-600 text-sm">
                 Survey no 246/1, Plot no 8<br />
                 Bhavnagar Rajkot road, Opp. GIDC-1<br />
-                Shihor, Bhavnagar, Gujarat - 364240
+                Sihor, Bhavnagar, Gujarat - 364240
               </p>
             </div>
           </div>
@@ -228,7 +257,7 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
-                    placeholder="+91-9876543210"
+                    placeholder="+91-9879917998"
                     disabled={loading}
                     required
                   />
@@ -308,7 +337,7 @@ export default function Contact() {
                     <p className="text-gray-900">
                       Survey no 246/1, Plot no 8<br />
                       Bhavnagar Rajkot road, Opp. GIDC-1<br />
-                      Shihor, Bhavnagar, Gujarat - 364240
+                      Sihor, Bhavnagar, Gujarat - 364240
                     </p>
                   </div>
                 </div>

@@ -13,9 +13,9 @@ export default function Products() {
   const coreProductNames = [
     'GUY SET',
     'V-CROSS ARM SET',
-    'S.S SET',
-    'TEPPING ANGLE',
-    'GUARDING ANGLE',
+    'GUY SET',
+    'V-CROSS ARM SET',
+    'GUY SET',
   ]
 
   // Load product images from public assets
@@ -44,11 +44,11 @@ export default function Products() {
 
   const getProductDescription = (index) => {
     const coreDescriptions = [
-      'Reliable guy set for stable support and long-term line performance.',
+      'Reliable GUY SET for stable support and long-term line performance.',
       'Durable V-cross arm set designed for secure electrical line mounting.',
-      'High-quality S.S set built for corrosion resistance and dependable performance.',
-      'Precision tepping angle for fabrication and structural support applications.',
-      'Strong guarding angle suitable for protective and reinforcement use.',
+      'High-quality GUY SET built for corrosion resistance and dependable performance.',
+      'Precision V-Cross arm SET for fabrication and structural support applications.',
+      'Strong GUY SET suitable for protective and reinforcement use.',
     ]
 
     if (index <= 5) return coreDescriptions[index - 1]

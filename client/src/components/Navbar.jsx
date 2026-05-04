@@ -10,8 +10,8 @@ export default function Navbar() {
 
   const contactItems = [
     {
-      href: 'tel:+919876543210',
-      label: '+91-9876543210',
+      href: 'tel:+919879917998',
+      label: '+91-9879917998',
       Icon: FiPhone,
     },
     {
@@ -53,9 +53,9 @@ export default function Navbar() {
           </div>
 
           <div className="hidden sm:flex justify-end items-center gap-6">
-            <a href="tel:+919876543210" className="flex items-center gap-2 text-gray-700 hover:text-primary">
+            <a href="tel:+919879917998" className="flex items-center gap-2 text-gray-700 hover:text-primary">
               <FiPhone size={16} />
-              <span className="font-medium">+91-9876543210</span>
+              <span className="font-medium">+91-9879917998</span>
             </a>
             <a href="mailto:krishnaprofile20@gmail.com" className="flex items-center gap-2 text-gray-700 hover:text-primary">
               <FiMail size={16} />
