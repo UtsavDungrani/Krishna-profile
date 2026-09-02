@@ -3,12 +3,74 @@ import { Link } from 'react-router-dom'
 import { FiX } from 'react-icons/fi'
 import ProductCard from '../components/ProductCard'
 import ImageLightbox from '../components/ImageLightbox'
+import SEO from '../components/SEO'
 
 export default function Products() {
   const [products, setProducts] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [activeProduct, setActiveProduct] = useState(null)
   const [selectedImage, setSelectedImage] = useState(null)
+
+  const productsSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    '@id': 'https://krishnaprofile.com/products#itemlist',
+    'url': 'https://krishnaprofile.com/products',
+    'name': 'Krishna Profile Electrical Poles & Transmission Line Hardware Catalog',
+    'description': 'Complete product catalog of hot-dip galvanized octagonal poles, swaged tubular poles, high mast lighting towers, and transmission line hardware.',
+    'itemListElement': [
+      {
+        '@type': 'ListItem',
+        'position': 1,
+        'item': {
+          '@type': 'Product',
+          'name': 'Octagonal Steel Pole',
+          'description': 'Custom hot-dip galvanized octagonal steel pole for street lighting, highways, and power distribution.',
+          'brand': { '@type': 'Brand', 'name': 'Krishna Profile' }
+        }
+      },
+      {
+        '@type': 'ListItem',
+        'position': 2,
+        'item': {
+          '@type': 'Product',
+          'name': 'Swaged Tubular Steel Pole (IS 2713)',
+          'description': 'Heavy-duty swaged tubular steel pole conforming to IS 2713 standards for overhead electrification.',
+          'brand': { '@type': 'Brand', 'name': 'Krishna Profile' }
+        }
+      },
+      {
+        '@type': 'ListItem',
+        'position': 3,
+        'item': {
+          '@type': 'Product',
+          'name': 'High Mast Lighting Tower',
+          'description': 'Motorized high mast pole tower with custom lantern carriage for large area lighting.',
+          'brand': { '@type': 'Brand', 'name': 'Krishna Profile' }
+        }
+      },
+      {
+        '@type': 'ListItem',
+        'position': 4,
+        'item': {
+          '@type': 'Product',
+          'name': 'V-Cross Arm Set',
+          'description': 'Corrosion resistant V-Cross Arm Set for 11kV and 33kV distribution networks.',
+          'brand': { '@type': 'Brand', 'name': 'Krishna Profile' }
+        }
+      },
+      {
+        '@type': 'ListItem',
+        'position': 5,
+        'item': {
+          '@type': 'Product',
+          'name': 'Guy Set Assembly',
+          'description': 'Heavy-duty stay guy set with turnbuckle and stay rod for pole anchoring.',
+          'brand': { '@type': 'Brand', 'name': 'Krishna Profile' }
+        }
+      }
+    ]
+  }
 
   const coreProductNames = [
     'GUY SET',
@@ -70,6 +132,13 @@ export default function Products() {
 
   return (
     <div>
+      <SEO
+        title="Electrical Poles & Fabrication Catalog | Krishna Profile Products"
+        description="Explore Krishna Profile's full catalog of hot-dip galvanized Octagonal Steel Poles, Swaged Tubular Poles, High Mast Towers, V-Cross Arm Sets, Guy Sets, and line hardware."
+        keywords="Krishna Profile product catalog, octagonal steel pole price, swaged tubular pole manufacturer, high mast lighting tower specifications, V-cross arm set, guy set, transmission line hardware India"
+        canonical="https://krishnaprofile.com/products"
+        schema={productsSchema}
+      />
       {/* Hero Section */}
       <section className="bg-gray-900 text-white py-12">
         <div className="container-custom">

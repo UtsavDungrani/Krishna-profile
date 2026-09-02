@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { FiCheckCircle, FiZap, FiTrendingUp } from 'react-icons/fi'
 import ImageLightbox from '../components/ImageLightbox'
+import SEO from '../components/SEO'
 
 export default function Workshop() {
   const [workshopImages, setWorkshopImages] = useState([])
@@ -12,14 +13,38 @@ export default function Workshop() {
       images.push({
         id: i,
         src: `/assets/Workshop-${i}.jpeg`,
-        alt: `Workshop ${i}`
+        alt: `Krishna Profile Octagonal Pole & Tubular Pole Fabrication Workshop Facility Sihor ${i}`
       })
     }
     setWorkshopImages(images)
   }, [])
 
+  const workshopSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ManufacturingPlant',
+    '@id': 'https://krishnaprofile.com/workshop#plant',
+    'name': 'Krishna Profile Steel Pole & Fabrication Workshop',
+    'url': 'https://krishnaprofile.com/workshop',
+    'description': 'State-of-the-art manufacturing facility equipped with CNC bending machines, hydraulic press brakes, submerged arc welding, and hot-dip galvanizing for electrical poles.',
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'Survey no 246/1, Plot no 8, Bhavnagar Rajkot road, Opp. GIDC-1',
+      'addressLocality': 'Sihor',
+      'addressRegion': 'Gujarat',
+      'postalCode': '364240',
+      'addressCountry': 'IN'
+    }
+  }
+
   return (
     <div>
+      <SEO
+        title="Manufacturing Facility & Quality Standards | Krishna Profile Workshop"
+        description="Tour Krishna Profile's state-of-the-art pole manufacturing plant in Sihor, Gujarat. ISO-compliant hydraulic press brakes, CNC cutting, and hot-dip galvanization."
+        keywords="Krishna Profile workshop, steel pole manufacturing facility, CNC octagonal pole bending, swaged pole welding, hot dip galvanization Gujarat, IS 2713 quality standards"
+        canonical="https://krishnaprofile.com/workshop"
+        schema={workshopSchema}
+      />
       {/* Hero Section */}
       <section className="bg-gray-900 text-white py-12">
         <div className="container-custom">

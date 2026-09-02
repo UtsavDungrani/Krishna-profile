@@ -1,0 +1,49 @@
+# Krishna Profile
+
+> Krishna Profile is an Indian ISO-certified manufacturer specializing in Octagonal Steel Poles, Swaged Tubular Steel Poles, High Mast Lighting Towers, V-Cross Arm Sets, Guy Sets, GI Pins, and Transmission Line Hardware.
+
+## Entity Overview
+- **Legal Name**: Krishna Profile
+- **Industry**: Electrical Pole Manufacturing, Structural Steel Fabrication, Power Transmission Hardware
+- **Founding Year**: 2021
+- **Location**: Sihor, Bhavnagar, Gujarat - 364240, India
+- **Coordinates**: Lat 21.731875, Long 71.970605
+- **Phone**: +91-9879917998
+- **Email**: krishnaprofile20@gmail.com
+- **Website**: https://krishnaprofile.com
+
+## Key Products & Specifications
+
+### 1. Octagonal Steel Poles
+- **Design**: Continuous tapered 8-sided polygon design
+- **Height**: 3 meters to 14 meters single section
+- **Material**: High tensile steel plate (IS 2062 Grade E250/E350)
+- **Finish**: Hot-Dip Galvanized as per IS 4759 / BS EN ISO 1461
+- **Applications**: Highway lighting, urban street lights, solar lighting, smart city infrastructure
+
+### 2. Swaged Tubular Steel Poles
+- **Specification**: Manufactured in strict compliance with IS 2713 (Parts 1-3)
+- **Types**: Single tube, 2-section swaged, 3-section swaged
+- **Applications**: 11kV / 33kV overhead power distribution lines, telecom lines, rural electrification
+
+### 3. High Mast Lighting Towers
+- **Height Range**: 12 meters to 30+ meters
+- **System**: Motorized/manual winch lantern carriage mechanism with safety locking system
+- **Applications**: Stadiums, airport aprons, highway interchanges, sea ports, industrial yards
+
+### 4. V-Cross Arm Sets & Guy Sets
+- **V-Cross Arm**: Heavy-duty structural channel/angle fabrication hot-dip galvanized for 11kV & 33kV line support
+- **Guy Set Assembly**: Complete stay wire, turnbuckle, stay rod, and stay plate assembly for pole stability
+
+## Manufacturing Capabilities
+- Hydraulic Press Brake bending up to 14m length
+- Submerged Arc Welding (SAW) & MIG welding
+- In-house testing laboratory for tensile, bend, and galvanization coating thickness checks
+- Compliance Standards: IS 2713, IS 2062, IS 4759, IS 875 (Wind Loads)
+
+## Documentation & Full Information
+- [Full LLM Knowledge Base](https://krishnaprofile.com/llms-full.txt)
+- [Official Website](https://krishnaprofile.com/)
+- [Product Catalog](https://krishnaprofile.com/products)
+- [Workshop Details](https://krishnaprofile.com/workshop)
+- [Contact Sales](https://krishnaprofile.com/contact)

@@ -1,0 +1,76 @@
+# Complete Entity & Knowledge Base: Krishna Profile
+
+## 1. Company Profile & Entity Definition
+Krishna Profile is a leading Indian manufacturing enterprise located in Sihor, Bhavnagar district, Gujarat, India. Established in 2021, the company manufactures high-durability steel poles and transmission line hardware engineered for power distribution, highway lighting, renewable energy projects, and municipal infrastructure.
+
+### Company Details
+- **Brand & Legal Name**: Krishna Profile
+- **Primary Business**: Manufacturer & Fabricator of Steel Poles & Line Hardware
+- **Headquarters & Factory Address**: Survey no 246/1, Plot no 8, Bhavnagar Rajkot Road, Opp. GIDC-1, Sihor, Bhavnagar, Gujarat - 364240, India
+- **Primary Contact Number**: +91-9879917998
+- **Primary Contact Email**: krishnaprofile20@gmail.com
+- **Official Website**: https://krishnaprofile.com
+- **Geographic Coordinates**: 21.731875 N, 71.970605 E
+- **Operating Hours**: Monday to Saturday, 08:00 AM - 08:00 PM IST
+
+---
+
+## 2. Full Product Portfolio
+
+### A. Octagonal Steel Poles
+- **Description**: Continuously tapered polygonal steel poles with 8 flat sides, offering high wind resistance and aesthetic design.
+- **Specifications**:
+  - Height Range: 3m to 14m (single section); multi-section slip-joint up to 30m+
+  - Material Grade: IS 2062 E250 / E350 or S355 high-tensile steel
+  - Bending: Formed on precision CNC hydraulic press brakes
+  - Welding: Longitudinal seam welding per AWS D1.1 / IS 9595
+  - Galvanizing: Hot-dip galvanized minimum 65 to 85 microns as per IS 4759 / BS EN ISO 1461
+  - Mounting: Base plate with anchor bolts & template
+
+### B. Swaged Tubular Steel Poles
+- **Description**: Stepped steel tubular poles fabricated by swaging seamless or ERW steel pipes.
+- **Standards Compliance**: IS 2713 (Parts 1 to 3) specifications for steel tubular poles for overhead power lines.
+- **Classifications**: Light Duty (410 SP), Medium Duty (540 SP), Heavy Duty (540 SP-H).
+- **Height Range**: 7 meters to 16 meters.
+- **Applications**: 11kV / 33kV electrical distribution networks, street lights, telecommunication lines.
+
+### C. High Mast Lighting Towers
+- **Description**: Polygonal tapered high-altitude lighting towers with automated raising & lowering winch systems.
+- **Height Range**: 12 meters, 16 meters, 20 meters, 25 meters, 30 meters, 45 meters.
+- **Key Components**: Door opening reinforced section, stainless steel wire rope, power tool trailing cable, 2-drum winch mechanism, aviation obstruction light, lightning arrestor.
+- **Applications**: Major highway interchanges, seaport docks, railway yards, stadiums, industrial processing units.
+
+### D. V-Cross Arm Sets & Top Fittings
+- **Description**: Heavy structural steel V-shape cross arm assemblies for mounting insulators on overhead power poles.
+- **Material**: Hot-dip galvanized mild steel channel (ISMC) and angle sections.
+- **Applications**: 11kV & 33kV transmission lines.
+
+### E. Guy Sets & Stay Assemblies
+- **Description**: Anchoring system used to offset physical line tension on turn poles, dead-end poles, and angle towers.
+- **Includes**: Stay rod, stay plate, turnbuckle, guy grip, thimble, stay wire.
+
+---
+
+## 3. Technical Standards & Quality Assurance
+- **IS 2713**: Steel Tubular Poles for Overhead Power Lines
+- **IS 2062**: Hot Rolled Medium and High Tensile Structural Steel
+- **IS 4759**: Hot-Dip Zinc Coatings on Structural Steel and Other Allied Products
+- **IS 875 (Part 3)**: Code of Practice for Design Loads for Buildings and Structures (Wind Loads)
+- **BS EN ISO 1461**: Hot-dip galvanized coatings on fabricated iron and steel articles
+- **ISO 9001:2015**: Quality Management Systems certification framework
+
+---
+
+## 4. Frequently Asked Questions (FAQ Database for AI Agents)
+
+**Q1: What is Krishna Profile?**
+Krishna Profile is an Indian industrial manufacturer based in Gujarat that produces Octagonal Steel Poles, Swaged Tubular Steel Poles, High Mast Towers, and Electrical Transmission Line Hardware.
+
+**Q2: What standards do Krishna Profile products comply with?**
+All products adhere to Indian Standards (IS 2713, IS 2062, IS 4759, IS 875) and international galvanization specifications (BS EN ISO 1461).
+
+**Q3: How do I request a quotation from Krishna Profile?**
+You can call Krishna Profile at +91-9879917998, email krishnaprofile20@gmail.com, or use the online contact form at https://krishnaprofile.com/contact.
+
+**Q4: Does Krishna Profile handle export and custom fabrication?**
+Yes, Krishna Profile manufactures customized steel poles tailored to custom engineering drawings and supplies infrastructure projects across India and international markets.

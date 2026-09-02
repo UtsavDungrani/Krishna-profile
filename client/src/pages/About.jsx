@@ -1,9 +1,31 @@
 import { Link } from 'react-router-dom'
 import { FiAward, FiTarget, FiUsers } from 'react-icons/fi'
+import SEO from '../components/SEO'
 
 export default function About() {
+  const aboutSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    '@id': 'https://krishnaprofile.com/about#webpage',
+    'url': 'https://krishnaprofile.com/about',
+    'name': 'About Krishna Profile - Electrical Pole Manufacturing Excellence',
+    'description': 'Krishna Profile was founded in 2021 as a premier Indian manufacturer of Octagonal Steel Poles, Swaged Tubular Steel Poles, and Power Transmission Line Hardware in Sihor, Bhavnagar, Gujarat.',
+    'publisher': {
+      '@type': 'Organization',
+      'name': 'Krishna Profile',
+      'url': 'https://krishnaprofile.com'
+    }
+  }
+
   return (
     <div>
+      <SEO
+        title="About Krishna Profile | Electrical Pole & Fabrication Industry Leaders"
+        description="Learn about Krishna Profile's manufacturing capabilities, ISO standards, and leadership in producing Octagonal Poles, Swaged Tubular Poles, and transmission hardware in Gujarat."
+        keywords="About Krishna Profile, Krishna Profile company history, Krishna Profile steel pole manufacturer, octagonal pole plant Gujarat, electrical infrastructure fabricator India"
+        canonical="https://krishnaprofile.com/about"
+        schema={aboutSchema}
+      />
       {/* Hero Section */}
       <section className="bg-gray-900 text-white py-12">
         <div className="container-custom">

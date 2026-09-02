@@ -4,6 +4,7 @@ import { FiCheckCircle, FiTrendingUp, FiAward } from 'react-icons/fi'
 import ImageSlider from '../components/ImageSlider'
 import ProductCard from '../components/ProductCard'
 import ImageLightbox from '../components/ImageLightbox'
+import SEO from '../components/SEO'
 
 export default function Home() {
   const [heroImages, setHeroImages] = useState([])
@@ -37,7 +38,7 @@ export default function Home() {
     for (let i = 4; i >= 1; i--) {
       heroImgs.push({
         src: `/assets/product-${i}.jpeg`,
-        alt: `Product ${i}`
+        alt: `Krishna Profile Electrical Pole & Line Hardware Product ${i}`
       })
     }
     setHeroImages(heroImgs)
@@ -59,14 +60,80 @@ export default function Home() {
     for (let i = 1; i <= 3; i++) {
       workshops.push({
         src: `/assets/Workshop-${i}.jpeg`,
-        alt: `Workshop ${i}`
+        alt: `Krishna Profile Manufacturing Workshop Facility Sihor ${i}`
       })
     }
     setWorkshopImages(workshops)
   }, [])
 
+  const homeSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': 'https://krishnaprofile.com/#website',
+        'url': 'https://krishnaprofile.com',
+        'name': 'Krishna Profile',
+        'description': 'Leading Manufacturer of Electrical Poles & Transmission Line Hardware in India',
+        'publisher': { '@id': 'https://krishnaprofile.com/#organization' }
+      },
+      {
+        '@type': 'Organization',
+        '@id': 'https://krishnaprofile.com/#organization',
+        'name': 'Krishna Profile',
+        'alternateName': ['Krishna Profile Electrical Pole', 'Krishna Profile Steel Fabrication'],
+        'url': 'https://krishnaprofile.com',
+        'logo': 'https://krishnaprofile.com/assets/icon-logo.png',
+        'contactPoint': {
+          '@type': 'ContactPoint',
+          'telephone': '+919879917998',
+          'contactType': 'sales',
+          'areaServed': 'IN',
+          'availableLanguage': ['English', 'Hindi', 'Gujarati']
+        }
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://krishnaprofile.com/#faq',
+        'mainEntity': [
+          {
+            '@type': 'Question',
+            'name': 'What products does Krishna Profile manufacture?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Krishna Profile manufactures Octagonal Steel Poles, Swaged Tubular Steel Poles, High Mast Lighting Towers, Solar Mounting Structure Poles, V-Cross Arm Sets, Guy Sets, GI Pins, and electrical power line distribution hardware.'
+            }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Where is Krishna Profile located?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Krishna Profile is located at Survey no 246/1, Plot no 8, Bhavnagar Rajkot Road, Opp. GIDC-1, Sihor, Bhavnagar, Gujarat - 364240, India.'
+            }
+          },
+          {
+            '@type': 'Question',
+            'name': 'How can I contact Krishna Profile for electrical pole inquiries?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Contact Krishna Profile by phone at +91-9879917998, email at krishnaprofile20@gmail.com, or through their official website contact page.'
+            }
+          }
+        ]
+      }
+    ]
+  }
+
   return (
     <div>
+      <SEO
+        title="Krishna Profile | Octagonal Poles, Swaged Tubular Poles & Electrical Hardware Manufacturer"
+        description="Krishna Profile is an Indian manufacturer of Octagonal Steel Poles, Swaged Tubular Poles, High Mast Lighting Towers, V-Cross Arm Sets, Guy Sets, and Power Transmission Line Hardware."
+        keywords="Krishna Profile, Krishna Profile electrical poles, Octagonal Pole Manufacturer, Swaged Tubular Pole, High Mast Lighting Tower, V-Cross Arm Set, Guy Set, Steel Fabrication Gujarat, Sihor Bhavnagar"
+        canonical="https://krishnaprofile.com/"
+        schema={homeSchema}
+      />
       {/* Hero Section */}
       <section className="bg-gray-900 text-white py-12">
         <div className="container-custom">

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://krishnaprofile.com/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://krishnaprofile.com/assets/icon-logo.png</image:loc>
+      <image:title>Krishna Profile Logo - Electrical Pole Manufacturer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://krishnaprofile.com/assets/product-1.jpeg</image:loc>
+      <image:title>Krishna Profile Octagonal Pole & Guy Set Fabrication</image:title>
+    </image:image>
+  </url>
+
+  <!-- Products Page -->
+  <url>
+    <loc>https://krishnaprofile.com/products</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://krishnaprofile.com/assets/product-1.jpeg</image:loc>
+      <image:title>Krishna Profile Guy Set Transmission Hardware</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://krishnaprofile.com/assets/product-2.jpeg</image:loc>
+      <image:title>Krishna Profile V-Cross Arm Set</image:title>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://krishnaprofile.com/about</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Workshop Page -->
+  <url>
+    <loc>https://krishnaprofile.com/workshop</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://krishnaprofile.com/assets/Workshop-1.jpeg</image:loc>
+      <image:title>Krishna Profile Manufacturing Plant Sihor Gujarat</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://krishnaprofile.com/assets/Workshop-2.jpeg</image:loc>
+      <image:title>Krishna Profile Hydraulic Bending Machine & Fabricator</image:title>
+    </image:image>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://krishnaprofile.com/contact</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

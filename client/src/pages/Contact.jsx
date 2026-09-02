@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { FiPhone, FiMail, FiMapPin, FiCheck, FiAlertCircle } from 'react-icons/fi'
 import emailjs from '@emailjs/browser'
+import SEO from '../components/SEO'
 
 const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
@@ -14,6 +15,72 @@ export default function Contact() {
     phone: '',
     message: '',
   })
+
+  const contactSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'ContactPage',
+        '@id': 'https://krishnaprofile.com/contact#webpage',
+        'url': 'https://krishnaprofile.com/contact',
+        'name': 'Contact Krishna Profile Sales & Technical Support',
+        'description': 'Contact Krishna Profile for pole inquiries, pricing quotes, and custom steel fabrication projects.'
+      },
+      {
+        '@type': 'LocalBusiness',
+        '@id': 'https://krishnaprofile.com/#localbusiness',
+        'name': 'Krishna Profile',
+        'image': 'https://krishnaprofile.com/assets/icon-logo.png',
+        'telephone': '+919879917998',
+        'email': 'krishnaprofile20@gmail.com',
+        'priceRange': '₹₹',
+        'address': {
+          '@type': 'PostalAddress',
+          'streetAddress': 'Survey no 246/1, Plot no 8, Bhavnagar Rajkot road, Opp. GIDC-1',
+          'addressLocality': 'Sihor',
+          'addressRegion': 'Gujarat',
+          'postalCode': '364240',
+          'addressCountry': 'IN'
+        },
+        'geo': {
+          '@type': 'GeoCoordinates',
+          'latitude': 21.731875,
+          'longitude': 71.970605
+        },
+        'openingHours': 'Mo-Sa 08:00-20:00'
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://krishnaprofile.com/contact#faq',
+        'mainEntity': [
+          {
+            '@type': 'Question',
+            'name': 'What is the minimum order quantity for Krishna Profile poles?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'We accept orders starting from 50 units. Custom fabrication orders may have different MOQs.'
+            }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Does Krishna Profile offer custom steel pole fabrication?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Yes, Krishna Profile specializes in custom designs according to client technical drawings and specifications.'
+            }
+          },
+          {
+            '@type': 'Question',
+            'name': 'What is the typical delivery time for orders?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Standard orders are manufactured and delivered within 15-30 days with express logistics available.'
+            }
+          }
+        ]
+      }
+    ]
+  }
 
   const [loading, setLoading] = useState(false)
   const [status, setStatus] = useState(null) // 'success', 'error', or null
@@ -102,6 +169,13 @@ export default function Contact() {
 
   return (
     <div>
+      <SEO
+        title="Contact Krishna Profile | Electrical Pole & Fabrication Sales Inquiry"
+        description="Get in touch with Krishna Profile for pricing, custom fabrication specs, and instant quotes for Octagonal Poles, Swaged Poles, and transmission line hardware."
+        keywords="Contact Krishna Profile, Krishna Profile address, Krishna Profile phone number, Krishna Profile Gujarat, electrical pole manufacturer quote"
+        canonical="https://krishnaprofile.com/contact"
+        schema={contactSchema}
+      />
       {/* Hero Section */}
       <section className="bg-gray-900 text-white py-12">
         <div className="container-custom">
